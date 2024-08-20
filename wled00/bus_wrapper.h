@@ -286,8 +286,8 @@ class PolyBus {
   static void beginTM1814(void* busPtr) {
     T tm1814_strip = static_cast<T>(busPtr);
     tm1814_strip->Begin();
-    // Max current for each LED (22.5 mA).
-    tm1814_strip->SetPixelSettings(NeoTm1814Settings(/*R*/225, /*G*/225, /*B*/225, /*W*/225));
+    // Max current for each LED (38 mA).
+    tm1814_strip->SetPixelSettings(NeoTm1814Settings(/*R*/380, /*G*/380, /*B*/380, /*W*/380));
   }
 
   static void begin(void* busPtr, uint8_t busType, uint8_t* pins, uint16_t clock_kHz = 0U) {
